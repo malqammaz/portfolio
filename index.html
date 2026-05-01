@@ -147,17 +147,31 @@
         /* Burger Menu Styles */
         .burger {
             display: none;
-            flex-direction: column;
+            flex-direction: column; 
             gap: 5px;
             cursor: pointer;
-            z-index: 1001;
+            z-index: 1001; 
+
+            align-items: flex-end;
         }
 
         .burger div {
-            width: 25px;
             height: 3px;
             background-color: var(--text-color);
-            border-radius: 5px;
+            border-radius: 5px; 
+        }
+
+        .burger div:nth-child(1) {
+            
+            width: 25px; 
+        }
+        .burger div:nth-child(2) {
+            
+            width: 20px;
+        }
+        .burger div:nth-child(3) {
+            
+            width: 15px;
         }
 
         section {
