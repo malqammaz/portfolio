@@ -215,6 +215,13 @@
             margin: 20px 0 0 0;
         }
 
+        .hero-name-line {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
         .hero-intro-text {
             margin: 0;
             font-size: 1.8rem;
@@ -537,9 +544,14 @@
                 justify-content: center;
                 gap: 8px;
             }
-            .hero-intro .line-decorator {
-                order: 3;
+            .hero-name-line {
+                justify-content: center;
+                order: 1;
                 flex-basis: 100%;
+            }
+            .hero-intro .line-decorator {
+                order: 2;
+                flex: 0 0 60px;
                 margin: 4px auto 0;
             }
             .buttons { justify-content: center; }
@@ -591,8 +603,10 @@
                 <p class="hero-eyebrow">Hello<span style="color:var(--primary-color)">.</span></p>
                 <div class="hero-intro">
                     <span class="line-decorator"></span>
-                    <span class="hero-intro-text">I'm</span>
-                    <h1>Mohammad Alqammaz</h1>
+                    <span class="hero-name-line">
+                        <span class="hero-intro-text">I'm</span>
+                        <h1>Mohammad Alqammaz</h1>
+                    </span>
                 </div>
                 <p class="hero-role">Software Engineer</p>
                 <p style="font-size: 1.1rem; color: var(--text-dim); margin-top: 30px; max-width: 600px;">
