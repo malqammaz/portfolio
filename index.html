@@ -25,7 +25,10 @@
             "@context": "https://schema.org",
             "@type": "Person",
             "name": "Mohammad Alqammaz",
-            "alternateName": "mqammaz",
+            "alternateName": [
+                "mqammaz",
+                "محمد القماز"
+            ],
             "url": "https://mqammaz.com/",
             "email": "mailto:mtalqammaz@gmail.com",
             "jobTitle": "Software Engineer",
@@ -472,6 +475,18 @@
             color: var(--primary-color);
         }
 
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
         @media (max-width: 1024px) {
             :root { --padding-standard: 6%; }
             .hero { grid-template-columns: 1fr; text-align: center; }
@@ -661,6 +676,7 @@
             <a href="https://www.linkedin.com/in/mohammad-alqammaz/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
             <a href="mailto:mtalqammaz@gmail.com"><i class="fas fa-envelope"></i></a>
         </div>
+        <span class="visually-hidden">Mohammad Alqammaz is also written in Arabic as محمد القماز.</span>
         <p>&copy; 2026 Mohammad Alqammaz. Built with precision.</p>
     </footer>
 
